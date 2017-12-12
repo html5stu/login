@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		 <meta itemprop="name" content="零用贷款，“贷”来幸福，申请简单、极速放款"/>
+		 <!--<meta itemprop="image" content="http://www.pettycash.cn/login/img/share.png"/>-->
+		 <meta name="sharecontent" data-msg-img="http://www.pettycash.cn/login/img/share.png" />
+		 
+		 <meta name="description" itemprop="description" content="零用宝，申请简单，快速到账。您的信用可以换钱，快来试试吧" />
+		<title>零用贷款，“贷”来幸福，申请简单、极速放款</title>
+		<link rel="shortcut icon" type="img/x-icon" href="img/fav.ico"/>
+		<link rel="stylesheet" href="css/basic.css" />
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<div class="wrap">
+			<!--logo-->
+			<h1 class="logo">
+				<img src="img/logo.png"/>
+			</h1>
+			<!--logo-->
+			<div class="content">
+				<!--banner-->
+				<div class="banner">
+					<img src="img/banner.png"/>
+				</div>
+				<!--banner-->
+				<!--log注册过程 start-->
+				<div class="log">
+					<div class="log_in">
+						<ul class="clearfix">
+							<li class="regisiter">
+								<div class="aa"><img src="img/regisiter.png"/></div>
+								<div>
+									<img src="img/corect.png" class="corect" style="width:20%"/><span class="user_regit">用户注册</span>
+								</div>
+							</li>
+							<li class="arrow">
+								<img src="img/arrow.png"/>
+							</li>
+							<li class="corect">
+								<div class="aa"><img src="img/data.png"/></div>
+								<div>
+									<img src="img/corect.png" class="corect" style="width:20%"/><span class="user_regit">填写资料</span>
+								</div>
+							</li>
+							<li class="arrow">
+								<img src="img/arrow.png"/>
+							</li>
+							<li class="withDraw">
+								<div class="aa"><img src="img/withDraw.png"/></div>
+								<div>
+									<img src="img/corect.png" class="corect" style="width:20%"/><span class="user_regit">提现到账</span>
+								</div>
+							</li>
+						</ul>
+						<div style="clear: both;"></div>
+						<!--提示错误信息-->
+						<p id="cont"></p>
+						<div class="input_tel">
+						   <img src="img/tel.png" class="tel"/>
+							<input type="text" placeholder="请输入手机号码" id="user_tel"/>
+						</div>
+						<div class="input_identify">
+						   <img src="img/identify1.png" class="identify"/>
+							<input type="text" placeholder="验证码" class="code" id="inputCode"/>
+							 <div class="numCode" id="checkCode"><img id="imgCap" onclick="createCode()"/></div>
+						</div>
+						<!--<div class="input_identify">
+						   <img src="img/identify.png" class="identify"/>
+							<input type="text" placeholder="验证码" class="code" id="inputCode" />
+							<div class="numCode" id="checkCode"></div>
+						</div>-->
+						<input type="hidden" name="" id="hide" value="" />
+						<span class="changeCode" onclick="createCode()">看不清？点击换一张</span>
+						<div class="input_identify">
+						   <img src="img/identify.png" class="identify"/>
+							<input type="text" placeholder="请输入验证码" class="code" id="code" />
+							<input type="button" name="" role="button" id="sendcode" value="发送验证码" />
+						</div>
+						
+						<div class="input_password">
+						    <img src="img/password.png" class="pwd"/>
+							<input type="password" placeholder="请设置6-12位的密码" id="pwd"/>
+						</div>
+						<div class="regt">
+							<input type="button" value="立即注册" id="btn"/>
+						</div>
+						<div class="deal">
+							<p><img src="img/agree.png" alt=""  class="" /><span class="agreeDeal">《我同意用户服务协议》</span></p>
+						</div>
+						
+					</div>
+				</div>
+				<!--log注册过程 end-->
+				<!--零用宝优势 start-->
+				<div class="advanstage">
+					<div class="ad_in">
+						<p class="title_advanstage"><span class="ad_ling">零用宝优势</span></p>
+						<ul class="ad_pro clearfix">
+							<li class="">
+								<img src="img/approve.png" alt="" class="fl mt_3"/>
+								<span class="fast_approve fl">极速认证</span>
+								<span class="submitData fl">手机提交资料，<span class="color_orange">10秒钟</span>通过</span>
+							</li>
+							<li >
+								<img src="img/fast_pay.png" alt="" class="fl mt_3"/>
+								<span class="fast_approve fl">快速到账</span>
+								<span class=" submitData fl">快至<span class="color_orange">1分钟</span>到账，无需等待</span>
+							</li>
+							<li >
+								<img src="img/save.png" alt="" class="fl mt_3"/>
+								<span class="fast_approve fl">安全保障</span> 
+								<span class="fl submitData bank">银行级监控，为您保驾护航</span>
+							</li>
+						</ul>
+						<p class="info">小提示:首次申请时，绑定真实信息有助于成功借款</p>
+					</div>
+				</div>
+				<!--零用宝优势 end-->
+				<!--借贷额度利息参考  start -->
+				<div class="lending">
+					<div class="lending_in">
+						<p class="title_lending"><span class="lending_invset">借贷额度利息参考</span></p>
+						<div class="lend_money clearfix">
+							<p><span class="fl">借贷额度</span><span class="invest_month">借贷利息/月</span></p>
+							<p><span class="fl"><strong>1000</strong> 元 </span><span class="color_orange">8.4</span> 元<a href="" class="fr fast_lending" id="goToTop_01">马上借钱</a></p>
+							<p><span class="fl"><strong>3000</strong> 元 </span><span class="color_orange">25.2</span> 元<a href="" class="fr fast_lending" id="goToTop_02">马上借钱</a></p>
+							<p><span class="fl"><strong>10000</strong> 元</span><span class="color_orange">42</span> 元<a href="" class="fr fast_lending" id="goToTop_03">马上借钱</a></p>
+						</div>
+					</div>
+				</div>
+				<!--借贷额度利息参考  end-->
+				<input type="hidden"  id="user_from" name="user_from" value="user"/>
+			</div>
+			<footer>
+				<p>上海珮钧金融信息服务有限公司</p>
+				<p>沪ICP备17031788号</p>
+			</footer>
+		</div>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/basce.js"></script>
+		<script src="js/md5.js"></script>
+		<script>
+				var timestamp = (new Date()).valueOf();
+				var hide=$("#hide");
+				var imgCap=$("#imgCap");
+				hide.val(timestamp);
+				imgCap.attr("src","http://api.pettycash.cn/pjapiregister/captcha.svl?RCaptchaKey="+timestamp);
+//				imgCap.attr("src","http://api.pettycash.cn/pjapiregisterpre/captcha.svl?RCaptchaKey="+timestamp);
+				
+				setTimeout(function(){
+					var timestamp3 = (new Date()).valueOf();
+					imgCap.attr("src","http://api.pettycash.cn/pjapiregister/captcha.svl?RCaptchaKey="+timestamp3);
+//					imgCap.attr("src","http://api.pettycash.cn/pjapiregisterpre/captcha.svl?RCaptchaKey="+timestamp3);
+					
+					hide.val(timestamp3);
+				},2000)
+				
+			function createCode(){
+				var timestamp2 = (new Date()).valueOf();
+				console.log(timestamp2)
+				imgCap.attr("src","http://api.pettycash.cn/pjapiregister/captcha.svl?RCaptchaKey="+timestamp2);
+//				imgCap.attr("src","http://api.pettycash.cn/pjapiregisterpre/captcha.svl?RCaptchaKey="+timestamp2);
+				
+//				imgCap.attr("src","http://192.168.1.12:8080/captcha.svl?RCaptchaKey="+timestamp2);
+				hide.val(timestamp2);
+				console.log(hide.val(timestamp2))
+			}
+				
+			//图形验证码
+//			var d;
+//			var getRandomCode=function(){
+//					$.ajax({
+//					type:"get",
+//					dataType:"jsonp",
+//	    			jsonp:"jsonpCallback",
+//	    			async:true,
+//					url:"http://192.168.1.12:8080/getForeStr",
+//					success:function(res){
+//						var checkCode=$("#checkCode");
+//						data=res.data;
+//						d=data.d;
+//						console.log(d)
+//						checkCode.text(data.randomcode);
+//						
+//					}
+//				})
+//			}
+//			getRandomCode();
+//			window.onload=function(){
+//				createCode();
+//			}
+//			 var codes;
+//			function createCode() {
+//				codes = "";
+//				var codeLength = 4; //验证码的长度
+//				var checkCode = document.getElementById("checkCode");
+//				var codeChars = new Array(0, 1, 2, 3, 4, 5, 6, 7, 8, 9,
+//					'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z',
+//					'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'); //所有候选组成验证码的字符，当然也可以用中文的
+//				for(var i = 0; i < codeLength; i++) {
+//					var charNum = Math.floor(Math.random() * 62); //产生4个随机数
+//					console.log(charNum)
+//					codes += codeChars[charNum];
+//				}
+//				if(checkCode) { //判断checkCode对象是否存在，防止js出错，不写也可以。存在执行下面代码，不存在执行其他代码
+//					checkCode.className = "numCode";
+//					checkCode.innerHTML = codes;
+//				}
+//			}
+		
+//      // 给go to top按钮一个点击事件
+        $("#goToTop_01,#goToTop_02,#goToTop_03").click(function(){
+            $("html,body").animate({scrollTop:200+"px"},800);//点击go to top按钮时，以800的速度回到顶部，这里的800可以根据你的需求修改
+            return false;
+        });
+      
+        //点击发送验证码的时候
+		var sendcode=$('#sendcode');
+		//判断变量是否为空
+		function checkVar(param){
+			if(param=='' || param==undefined || param==null){
+				return false;
+			}
+			return true;
+		}
+		sendcode.click(function(){
+			var phonePattern = /(^(([0\+]\d{2,3}-)?(0\d{2,3})-)(\d{7,8})(-(\d{3,}))?$)|(^(([0\+]\d{2,3})?(0\d{2,3}))(\d{7,8})((\d{3,}))?$)|(^0{0,1}1[3|4|5|6|7|8|9][0-9]{9}$)/;
+			var phoneNum=$('#user_tel').val();//手机号
+	        var pwd=$('#pwd').val()//密码
+	        var code=$('#code').val()//手机验证码
+	        var inputCode=$("#inputCode").val()//图形验证码
+	        var cont=$("#cont");
+			var times=60;
+			var timer=null;
+			var val=$("#hide").val();
+//			console.log(val)
+//			var url1="http://192.168.1.12:8080/act/light-loan-lyb/registerCode2/"+phoneNum+"/"+inputCode+"?RCaptchaKey="+val;
+			var url1="http://api.pettycash.cn/pjapiregister/act/light-loan-lyb/registerCode2/"+phoneNum+"/"+inputCode+"?RCaptchaKey="+val;
+//			var url1="http://api.pettycash.cn/pjapiregisterpre/act/light-loan-lyb/registerCode2/"+phoneNum+"/"+inputCode+"?RCaptchaKey="+val;
+			
+			if(!checkVar(phoneNum)){
+			 	cont.text('*请输入手机号').show().delay(2000).fadeOut();
+			 	return;
+			 }else if(phonePattern.test(phoneNum) == false){
+			 	cont.text('*请输入正确的手机格式').show().delay(2000).fadeOut();
+			 	return;
+			 }else if(!checkVar(inputCode)){
+			 		cont.text('*请输入图形验证码').show().delay(2000).fadeOut();
+			 		return;
+			 }
+//			
+			timer=setInterval(function(){
+				times--;
+				sendcode.attr("disabled","true");
+				sendcode.val(times + "秒后重试");
+				sendcode.css('background',"#ccc");
+				if(times==0){
+			          sendcode.removeAttr("disabled");
+			          sendcode.val("发送验证码");
+			          sendcode.css('background',"rgb(255,158,0)");
+			          clearInterval(timer);
+			          times = 60;
+			        }
+			},1000)
+			$.ajax({
+				  	type:"get",
+//				  	url:"http://192.168.1.12:8080/act/light-loan-lyb/registerCode2/"+phoneNum+"/"+inputCode,
+//				  	url:"http://api.pettycash.cn/pjapiregister/act/light-loan-lyb/registerCode2/"+phoneNum+"/"+inputCode,
+				  	url:url1,
+				  	dataType:"jsonp",
+				  	jsonp: "jsonpCallback",
+				  	async:true,
+				  	success:function(res){
+//				  		console.log(url1)
+//				  		console.log(res)
+				  		if(res.code==-1){
+				  			createCode();
+				  		}
+//				  		code=0成功   code=-1手机号已被注册
+						cont.text(res.message).show().delay(3000).fadeOut();
+						if(res.message!="成功获取验证码"){
+							 clearInterval(timer);
+						}
+				  	},
+			  })
+		})
+		//点击注册的时候
+		var btn=$('#btn');
+    	btn.click(function(){
+    		var phoneNum=$('#user_tel').val();//手机号
+    		var pwd=$('#pwd').val()//密码
+    		var pwd_length=$('#pwd').val().length;
+	        var code=$('#code').val()//验证码
+			var phonePattern = /(^(([0\+]\d{2,3}-)?(0\d{2,3})-)(\d{7,8})(-(\d{3,}))?$)|(^(([0\+]\d{2,3})?(0\d{2,3}))(\d{7,8})((\d{3,}))?$)|(^0{0,1}1[3|4|5|6|7|8|9][0-9]{9}$)/;
+    		var hash=hex_md5(pwd).toUpperCase();
+    		var cont=$("#cont");
+    		//获取URL参数的值
+			var url =location.search;
+			var Request = new Object(); 
+			if(url.indexOf("?")!=-1) 
+			{ 
+			var str = url.substr(url.indexOf("?")+1); 
+			Request[str.split("=")[0]]=(str.split("=")[1]); 
+			user_from = Request["user_from"];
+			}else{
+				user_from="";
+			}
+    		if(!checkVar(phoneNum)){
+			 	cont.text("*请输入手机号").show().delay(3000).fadeOut();
+			 	return;
+			 }else if(phonePattern.test(phoneNum)==false){
+			 	cont.text("*请输入正确的手机格式").show().delay(3000).fadeOut();
+			 	return;
+			 }
+			 else if(!checkVar(code)){
+			 	cont.text("*请输入手机验证码").show().delay(3000).fadeOut();
+			 	return;
+			 }
+			 else if(!checkVar(pwd)){
+			 	cont.text("*请输入6-12位密码").show().delay(3000).fadeOut();
+			 	return;
+			 }else if(pwd_length<6||pwd_length>12){
+			 	cont.text("*请输入6-12位密码").show().delay(3000).fadeOut();
+			 	}
+    		$.ajax({
+    			type:"get",
+    			dataType:"jsonp",
+    			jsonp:"jsonpCallback",
+    			async:true,
+//  			url:"http://192.168.1.12:8080/act/light-loan-lyb/register3?phone="+phoneNum+"&password="+hash+"&code="+code+"&user_from="+user_from,
+    			url:"http://api.pettycash.cn/pjapiregister/act/light-loan-lyb/register3?phone="+phoneNum+"&password="+hash+"&code="+code+"&user_from="+user_from,
+//  			url:"http://api.pettycash.cn/pjapiregisterpre/act/light-loan-lyb/register3?phone="+phoneNum+"&password="+hash+"&code="+code+"&user_from="+user_from,
+    			
+    			success:function(res){
+    				var ua=navigator.userAgent;
+					if(res.code==0){
+						cont.text("注册成功,即将前往下载").show().delay(5000).fadeOut();
+						if(ua.indexOf("Android")>-1||ua.indexOf("Linux")>-1){
+							window.location.href="http://www.pettycash.cn/static/lingyongbao.apk";
+						}else if(ua.indexOf('iPhone') > -1){
+							window.location.href="https://itunes.apple.com/us/app/%E9%9B%B6%E7%94%A8%E5%AE%9D/id1273027999?l=zh&ls=1&mt=8"
+						}
+					}
+					else if(res.code==-1){
+						cont.text(res.message).show().delay(5000).fadeOut();
+//						setTimeout(function(){
+//					 		cont.css('display','none');
+//					 	},1000)
+					}
+    			}
+    		});
+    	})
+
+		</script>
+	</body>
+</html>
